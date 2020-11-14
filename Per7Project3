@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Main {
+  public static void main(String[] args) {
+
+    //Scanner 
+    Scanner scan = new Scanner(System.in);
+
+    //Seat numbers
+    int[] seatNum = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+    String[] studNames = new String[15];
+    //Array for the bike models.
+
+    //Print statement for the the 15 
+
+    System.out.println("\nEnter 15 motorcycle models\n");
+    for (int a = 0; a < 15; a++)
+    {
+      String namesStud = scan.next();
+      studNames[a] = namesStud;
+    }
+
+    int s = 0;
+    //Print statement for where to find the bike.
+    while (s < 15) {
+      System.out.println(studNames[s] + " it's over by row  " + seatNum[s]);
+      s++;
+    }
+
+    System.out.println("\nHave fun tho and don't forget ATGATT!");
+
+  }
+}
